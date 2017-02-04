@@ -11,8 +11,10 @@ import org.gradle.api.Project
 class LNPluginMain implements Plugin<Project> {
     LobiConfiguration config
     LobiServices services
+
     void apply(Project project) {
         config=project.extensions.create('lobi', LobiConfiguration)
+        config.project=project
 
         project.gradle.buildStarted {
             if(!LobiServices.checkAvailable()){

@@ -9,11 +9,6 @@ import org.gradle.internal.reflect.Instantiator
 class LobiConfiguration {
     Project project
 
-    LobiConfiguration(Instantiator instantiator, Project project) {
-        this.project = project
-    }
-
-
     LoginInfo login=new LoginInfo()
 
     LoginInfo login(Closure closure){
