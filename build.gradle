@@ -15,7 +15,7 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
     compile gradleApi()
     compile localGroovy()
-    compile file("libs/bloodygarden.jar")
+    compile files("libs/bloodygarden.jar")
     //required for BloodyGarden
     compile "com.google.code.gson:gson:2.8.0"
     compile "org.jsoup:jsoup:1.10.1"

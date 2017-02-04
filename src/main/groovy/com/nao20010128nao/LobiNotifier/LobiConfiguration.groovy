@@ -29,4 +29,12 @@ class LobiConfiguration {
         project.configure(post,closure)
         return post
     }
+
+    DangerZone danger=new DangerZone()
+
+    DangerZone danger(Closure closure){
+        danger=new DangerZone()
+        project.configure(danger,closure)
+        return danger
+    }
 }

@@ -7,12 +7,38 @@ import groovy.transform.stc.FromString
  * Created by nao on 2017/02/04.
  */
 class PostInfo {
-    Closure<String> success,failed
+    /**
+     * Closure to generate messages for success result
+     * */
+    Closure<String> success
+    /**
+     * Closure to generate messages for failed result
+     * */
+    Closure<String> failed
+    /**
+     * Closure to generate messages to post before the build start
+     * */
     Closure<String> beforeStart
+    /**
+     * Switches posting when the build finishes with the success result
+     * */
     boolean postWhenSuccess=true
+    /**
+     * Switches posting when the build finishes with the failed result
+     * */
     boolean postWhenFailed=true
+    /**
+     * Switches posting before the build starts
+     * */
     boolean postBeforeStart=true
+    /**
+     * Switches shouts when posting<br>
+     * true for shout, false for not
+     * */
     boolean shout=false
+    /**
+     * Destination group to post
+     * */
     String destinationGroup
 
     void destination(String group){
