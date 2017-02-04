@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LobiNotifier-Gradle.iml" filepath="$PROJECT_DIR$/.idea/modules/LobiNotifier-Gradle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LobiNotifier-Gradle_main.iml" filepath="$PROJECT_DIR$/.idea/modules/LobiNotifier-Gradle_main.iml" group="LobiNotifier-Gradle" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LobiNotifier-Gradle_test.iml" filepath="$PROJECT_DIR$/.idea/modules/LobiNotifier-Gradle_test.iml" group="LobiNotifier-Gradle" />
+    </modules>
+  </component>
+</project>
