@@ -19,6 +19,10 @@ class LNPluginMain implements Plugin<Project> {
                 System.err.println "Skipping logging in, because Lobi is unavailable. (Slow down?)"
                 return
             }
+            if(config.danger.userAgent!=null){
+                println "ATTENTION: User agent for Lobi API access is set to \"${config.danger.userAgent}\".\nThis change may cause API calls errors."
+                LobiServices.PC_USER_AGENT=config.danger.userAgent
+            }
             println "Trying to log into Lobi."
             services=new LobiServices()
             def login=config.login
