@@ -10,4 +10,8 @@ class DangerZone {
      * so leave it blank if you have no reason to set it
      * */
     String userAgent
+
+    void userAgent(String userAgent) {
+        this.userAgent = userAgent
+    }
 }

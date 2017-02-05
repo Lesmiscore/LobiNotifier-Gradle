@@ -56,7 +56,23 @@ class PostInfo {
     }
 
     void beforeStart(@ClosureParams(value=FromString,options = "")
-                                Closure<String> beforeStart) {
+                             Closure<String> beforeStart) {
         this.beforeStart = beforeStart
+    }
+
+    void postWhenSuccess(boolean postWhenSuccess) {
+        this.postWhenSuccess = postWhenSuccess
+    }
+
+    void postWhenFailed(boolean postWhenFailed) {
+        this.postWhenFailed = postWhenFailed
+    }
+
+    void postBeforeStart(boolean postBeforeStart) {
+        this.postBeforeStart = postBeforeStart
+    }
+
+    void shout(boolean shout) {
+        this.shout = shout
     }
 }

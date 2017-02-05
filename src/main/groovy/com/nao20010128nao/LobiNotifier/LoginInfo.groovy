@@ -16,7 +16,14 @@ class LoginInfo {
      * Password for login
      * */
     String password
+
     void email(String username){
         this.username=username
+    }
+    void username(String username){
+        this.username=username
+    }
+    void password(String password){
+        this.password=password
     }
 }
